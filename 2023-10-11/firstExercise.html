@@ -5,42 +5,100 @@
     <title>erste Übung</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav>
-    <ul class="navStyling">
+<body id="top">
+<nav class="flex">
+    <ul class="flex navStyling">
         <li>
             <a href="#headerSection">First Link</a>
         </li>
         <li>
             <a href="#firstArticle">Second Link</a>
         </li>
+        <li>
+            <a href="#secondArticle">Third Link</a>
+        </li>
     </ul>
 </nav>
-<header id="headerSection">
+<header class="flex" id="headerSection">
     <h1>Meine erste Webseite</h1>
 </header>
 <main>
-    <article id="firstArticle">
+    <article class="flex" id="firstArticle">
+        <h2>zweiter Absatz</h2>
         <section>
-            <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.</p>
-            <p>Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</p>
-            <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es
-                ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.</p>
+            <h3>kleine Überschrift</h3>
+            <p>
+                Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+            </p>
+            <p>
+                Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+            </p>
+            <p>
+                Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es
+                ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.
+            </p>
         </section>
+
         <section>
-            <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu
-                unorthographisches Leben.</p>
-            <p>Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die
-                weite Grammatik.</p>
-            <p>Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und
-                hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben
-                Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel
-                des Kursivgebirges erklommen hatte, warf es einen letzten Blick</p>
+            <h3>kleine Überschrift</h3>
+            <p>
+                Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu
+                unorthographisches Leben.
+            </p>
+            <p>
+                Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die
+                weite Grammatik.
+            </p>
+            <p>
+                <strong>
+                    Der Link zu GitHub Repo:
+                    <!-- target blank macht die Seite in einem neuen Tab auf -->
+                    <a target="_blank" href="https://github.com/RebiRotti/CCWIL2023">https://github.com/RebiRotti/CCWIL2023</a>
+                </strong>
+            </p>
         </section>
     </article>
-    <article>
-
+    <article class="flex" id="secondArticle">
+        <h2>dritter Absatz</h2>
+        <section>
+            <img src="https://shorturl.at/gxT56" alt="Funny Animal Picture" class="fluid">
+            <h3>kleine Überschrift</h3>
+            <p>
+                Er hörte leise Schritte hinter sich. <br>
+                Das bedeutete nichts Gutes.
+            </p>
+            <p>
+                Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel
+                beleumundeten Hafenviertel?
+            </p>
+            <p>
+                Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte!
+            </p>
+        </section>
+        <section>
+            <img src="https://shorturl.at/aCTVY" alt="Funny Animal Picture" class="fluid">
+            <h3>kleine Überschrift</h3>
+            <p>
+                Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun
+                um die Früchte seiner Arbeit zu erleichtern?
+            </p>
+            <p>
+                Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die
+                stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu
+                bleiben schon hören.
+            </p>
+        </section>
     </article>
 </main>
+<footer>
+    <p>
+        <!--
+            &copy; ist ein HTML Entity, damit können besondere Zeichen in HTML dargestellt werden:
+            http://unicode.e-workers.de/entities.php
+        -->
+        &copy; 2023 Übung | <a href="#top">Back to top</a> |
+        <a href="mailto:rebecca.rottensteiner@fh-ooe.at">Send me a mail ;)</a>
+    </p>
+</footer>
 </body>
 </html>
