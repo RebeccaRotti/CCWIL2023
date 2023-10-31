@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Übung 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="#listExample">Listen Beispiele</a>
+        </li>
+        <li>
+            <a href="#formular">Formular Beispiel</a>
+        </li>
+        <li>
+            <a href="#inlineAndStyling">Inline Elemente & Inline Styling</a>
+        </li>
+        <li>
+            <a href="#svg">SVG</a>
+        </li>
+        <li>
+            <a href="#video">Video</a>
+        </li>
+        <li>
+            <a href="#iframe">iFrame</a>
+        </li>
+        <li>
+            <a href="#audio">Audio</a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <h1 style="text-align: center">Übung 2</h1>
+    <article id="listExample">
+        <div>
+            <h2 class="t-center">Listen Beispiele</h2>
+            <div class="flex">
+                <section>
+                    <h3>Ordered List</h3>
+                    <ol type="i" reversed start="5">
+                        <li>Item 1</li>
+                        <li>Unorderd List in orderd List
+                            <ul type="square">
+                                <li>Subitem 1</li>
+                                <li>Subitem 2</li>
+                            </ul>
+                        </li>
+                        <li>Item 3</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Definition List</h3>
+                    <dl>
+                        <dt>Vorspeise</dt>
+                        <dd>Salat</dd>
+                        <dd>Suppe</dd>
+                        <dt>Hauptspeise</dt>
+                        <dd>Menü 1</dd>
+                        <dd>Vegetarisch Menü 2</dd>
+                        <dd>Vegan: Salat ohne Dressing</dd>
+                        <dt>Nachspeise</dt>
+                        <dd>Kuchen</dd>
+                    </dl>
+                </section>
+            </div>
+        </div>
+    </article>
+    <hr>
+    <article id="formular">
+        <div>
+            <h2 class="t-center">Formular</h2>
+            <form class="mWidth p-20">
+                <section class="flex">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" class="p-5">
+                </section>
+                <section class="flex">
+                    <label for="inputPassword">Password</label>
+                    <input id="inputPassword" type="password" name="inputPassword" class="p-5">
+                </section>
+                <section class="flex">
+                    <label for="cars">Wähle dein Auto</label>
+                    <select id="cars" name="cars" class="p-5">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                    </select>
+                </section>
+                <fieldset>
+                    <legend>Ich bin eine Beschreibung</legend>
+                    <section class="flex">
+                        <textarea name="description">Beispiel</textarea>
+                    </section>
+                    <section class="flex">
+                        <label for="userMail">E-Mail</label>
+                        <input type="email" id="userMail" name="inputMail" placeholder="Deine Mailadresse" required class="p-5">
+                    </section>
+                </fieldset>
+                <section class="p-20 flex">
+                    <button class="p-5" type="submit">Absenden</button>
+                    <button class="p-5" type="reset">Reset</button>
+                </section>
+            </form>
+        </div>
+    </article>
+    <hr>
+    <article id="inlineAndStyling">
+        <section>
+            <h2 class="t-center">Inline Elemente & Inline Styling</h2>
+            <p class="mWidth p-20">
+                Weit hinten, hinter den Wortbergen, fern der Länder <strong>Vokalien und Konsonantien leben die Blindtexte.
+                Abgeschieden wohnen sie in Buchstabhausen an der Küste</strong> des Semantik, eines großen Sprachozeans.
+                Ein kleines <sup>Bächlein</sup> <sub>namens</sub> Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien.
+                Es ist ein paradiesmatisches Land, in dem <span style="background-color: #ab6f6f; padding: 2px; color: #fff;">einem gebratene Satzteile</span> in den Mund fliegen. Nicht einmal
+                von der allmächtigen Interpunktion <small>werden die Blindtexte beherrscht</small> – ein geradezu unorthographisches
+                Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen
+                in die weite <i>Grammatik</i>. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden
+                Fragezeichen und <span class="stylingSpan">uninteressanten Doppelpunkten</span> hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte
+                seine sieben Versalien, schob sich sein Initial in den Gürtel
+            </p>
+        </section>
+    </article>
+    <hr>
+    <article id="svg" class="p-20">
+        <section>
+            <h2 class="t-center">SVG</h2>
+            <!--SVG-->
+            <svg class="mWidth" width="150" height="150">
+                <rect width="150" height="50" x="0" y="0" fill="#d2232c" />
+                <rect width="150" height="50" x="0" y="50" fill="#ffffff" />
+                <rect width="150" height="50" x="0" y="100" fill="#d2232c" />
+            </svg>
+        </section>
+    </article>
+    <hr>
+    <article id="video">
+        <section>
+            <h2 class="t-center">Video</h2>
+            <!--Videos-->
+            <video class="mWidth p-20" src="https://ia600701.us.archive.org/26/items/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4" controls muted loop >
+                Leider unterstützt ihr Browser das video-Element nicht
+            </video>
+        </section>
+    </article>
+    <hr>
+    <article id="iframe">
+       <section>
+           <h2 class="t-center">iFrame</h2>
+           <!--iFrame-->
+           <iframe class="mWidth p-20" width="560" height="315" src="https://www.youtube.com/embed/zfgoOPeGIaw?si=ArIXyRu3xpxs5qQT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </section>
+    </article>
+    <hr>
+    <article id="audio">
+        <section>
+            <h2 class="t-center">Audio</h2>
+            <!--Audio-->
+            <audio class="mWidth p-20" controls src="https://file-examples.com/storage/fe1134defc6538ed39b8efa/2017/11/file_example_MP3_1MG.mp3">
+                Dein Browser unterstützt das Audio-Element nicht.
+            </audio>
+        </section>
+    </article>
+</main>
+<footer>
+    <p class="t-center">&copy; 2023 Übung 2</p>
+</footer>
+</body>
+</html>
