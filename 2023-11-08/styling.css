@@ -1,0 +1,71 @@
+/* navigation styling */
+
+/* ende navigation styling */
+
+h1, h2 {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+}
+h1:hover {
+    transform: scale(2);
+}
+.translate:hover {
+    transform: translate(3%, 3%);
+}
+.rotate:hover {
+    transform: rotate(180deg);
+}
+.secondTable th {
+    transform:skew(20deg, -10deg);
+}
+main {
+    overflow: hidden;
+}
+.table {
+    max-width: 90%;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+}
+
+table, .table th, td {
+    border: 1px solid #ab6f6f;
+    /*
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ab6f6f;
+    */
+    /*
+    border-top: 1px solid #ab6f6f;
+    border-right: 1px solid #ab6f6f;
+    border-bottom: 1px solid #ab6f6f;
+    border-left: 1px solid #ab6f6f;
+    */
+    border-radius: 0 5% 0 10%;
+    /*
+    border-radius: 10px 10px 10px 10px; obenLinks, obenRechts, untenRechts, untenLinks
+    border-top-left-radius: 0;
+    */
+    border-collapse: separate /* oder collapse*/;
+    border-spacing: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        background-color: #888888;
+        width: 20%;
+    }
+
+    .table td {
+        display: flex;
+        padding: 5px;
+    }
+    .table thead {
+        display: none;
+        visibility: hidden;
+    }
+}
