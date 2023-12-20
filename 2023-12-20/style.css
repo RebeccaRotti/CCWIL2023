@@ -1,0 +1,43 @@
+main {
+    max-width: 960px;
+    margin: 2% auto;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.headline {
+    font-family: 'Rubik Doodle Shadow', serif;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex > * {
+    flex: 1 1 250px;
+}
+input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px dashed #AB6F6FFF;
+}
+button[type="submit"] {
+    padding: 5px;
+    background-color: #496466;
+    color: white;
+    border: 1px solid #2D3233;
+    border-radius: 5px;
+    display: block;
+    margin: 2% 0 2% auto;
+}
+.delete {
+    flex-basis: 15px;
+    margin: 5px;
+    background-color: #ab6f6f;
+    border: 1px solid #6b1717;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
